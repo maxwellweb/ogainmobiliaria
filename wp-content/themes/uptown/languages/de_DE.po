@@ -1,0 +1,352 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: upTown v1.0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2013-10-22 11:40:43+0000\n"
+"Last-Translator: admin <simon@wpcasa.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: CSL v1.x\n"
+"X-Poedit-Language: German\n"
+"X-Poedit-Country: GERMANY\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_n:1,2;__ngettext_noop:1,2;_n_noop:1,2;_c,_nc:4c,1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;_nx_noop:4c,1,2;\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-Bookmarks: \n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Textdomain-Support: yes"
+
+#: 404.php:19
+#@ uptown
+msgid "Oops! That page can&rsquo;t be found"
+msgstr "Ups! Diese Seite konnte nicht gefunden werden"
+
+#: 404.php:26
+#@ uptown
+msgid "It looks like nothing was found at this location. Maybe try the search below?"
+msgstr "Irgendetwas ist hier schiefgelaufen. Vielleicht verwenden Sie die Suche unten."
+
+#: archive.php:35
+#, php-format
+#@ uptown
+msgid "Author: %s"
+msgstr "Autor: %s"
+
+#: archive.php:43
+#, php-format
+#@ uptown
+msgid "Day: %s"
+msgstr "Tag: %s"
+
+#: archive.php:46
+#, php-format
+#@ uptown
+msgid "Month: %s"
+msgstr "Monat: %s"
+
+#: archive.php:49
+#, php-format
+#@ uptown
+msgid "Year: %s"
+msgstr "Jahr: %s"
+
+#: archive.php:52
+#@ uptown
+msgid "Asides"
+msgstr ""
+
+#: archive.php:55
+#@ uptown
+msgid "Images"
+msgstr "Bilder"
+
+#: archive.php:58
+#@ uptown
+msgid "Videos"
+msgstr "Videos"
+
+#: archive.php:61
+#@ uptown
+msgid "Quotes"
+msgstr "Zitate"
+
+#: archive.php:64
+#@ uptown
+msgid "Links"
+msgstr "Links"
+
+#: archive.php:67
+#: sidebar.php:19
+#@ uptown
+msgid "Archives"
+msgstr "Archive"
+
+#: comments.php:30
+#, php-format
+#@ uptown
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Eine Reaktion zu &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s Reaktionen zu &ldquo;%2$s&rdquo;"
+
+#: comments.php:38
+#: comments.php:60
+#@ uptown
+msgid "Comment navigation"
+msgstr "Kommentarnavigation"
+
+#: comments.php:39
+#: comments.php:61
+#@ uptown
+msgid "&larr; Older Comments"
+msgstr "&larr; Ältere Kommentare"
+
+#: comments.php:40
+#: comments.php:62
+#@ uptown
+msgid "Newer Comments &rarr;"
+msgstr "Neuere Kommentare &rarr;"
+
+#: comments.php:73
+#@ uptown
+msgid "Comments are closed."
+msgstr "Kommentare sind nicht aktiviert."
+
+#: content-page.php:36
+#: content-single.php:26
+#: content.php:50
+#: image.php:43
+#@ uptown
+msgid "Pages:"
+msgstr "Seiten:"
+
+#. translators: used between list items, there is a space after the comma
+#: content-single.php:45
+#, php-format
+#@ uptown
+msgid "This entry was tagged %2$s."
+msgstr "Dieser Beitrag wurde mit %2$s etikettiert."
+
+#: content-single.php:53
+#, php-format
+#@ uptown
+msgid "This entry was posted in %1$s and tagged %2$s."
+msgstr "Dieser Beitrag wurde in %1$s veröffentlicht und mit %2$s etikettiert."
+
+#: content-single.php:55
+#, php-format
+#@ uptown
+msgid "This entry was posted in %1$s."
+msgstr "Dieser Beitrag wurde in %1$s veröffentlicht."
+
+#: content.php:27
+#@ uptown
+msgid "Sticky"
+msgstr ""
+
+#: footer.php:21
+#, php-format
+#@ uptown
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: functions.php:66
+#@ uptown
+msgid "Primary Menu"
+msgstr "Hauptmenü"
+
+#: functions.php:96
+#@ uptown
+msgid "Sidebar"
+msgstr ""
+
+#: image.php:56
+#, php-format
+#@ uptown
+msgid "Published <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+msgstr "Veröffentlicht am <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> um <a href=\"%3$s\">%4$s &times; %5$s</a> in <a href=\"%6$s\" rel=\"gallery\">%7$s</a>"
+
+#: image.php:72
+#@ uptown
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&larr;</span> Vorheriges Bild"
+
+#: image.php:73
+#@ uptown
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Nächstes Bild <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/customizer.php:54
+#@ uptown
+msgid "Call us today - 1 (800) 234 567"
+msgstr "Rufen Sie uns an - 1 (800) 234 567"
+
+#: inc/customizer.php:64
+#@ uptown
+msgid "Header Right"
+msgstr "Header rechts"
+
+#: inc/customizer.php:153
+#@ uptown
+msgid "Accent Color"
+msgstr "Kontrastfarbe"
+
+#: inc/extras.php:52
+#, php-format
+#@ uptown
+msgid "Page %s"
+msgstr "Seite %s"
+
+#: inc/helpers.php:40
+#@ uptown
+msgid "Read more"
+msgstr "Weiterlesen"
+
+#: inc/helpers.php:40
+#@ uptown
+msgid "More info"
+msgstr "Mehr Info"
+
+#: inc/template-tags.php:38
+#@ uptown
+msgid "Post navigation"
+msgstr "Artikelnavigation"
+
+#: inc/template-tags.php:42
+#@ uptown
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr ""
+
+#: inc/template-tags.php:43
+#@ uptown
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr ""
+
+#: inc/template-tags.php:48
+#@ uptown
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Ältere Artikel"
+
+#: inc/template-tags.php:52
+#@ uptown
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Neuere Artikel <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/template-tags.php:100
+#@ uptown
+msgid "Previous"
+msgstr "Zurück"
+
+#: inc/template-tags.php:101
+#@ uptown
+msgid "Next"
+msgstr "Vor"
+
+#: inc/template-tags.php:149
+#@ uptown
+msgid "Pingback:"
+msgstr ""
+
+#: inc/template-tags.php:149
+#: inc/template-tags.php:168
+#@ uptown
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: inc/template-tags.php:159
+#, php-format
+#@ uptown
+msgid "%s <span class=\"says\">says:</span>"
+msgstr "%s <span class=\"says\">sagt:</span>"
+
+#: inc/template-tags.php:165
+#, php-format
+#@ uptown
+msgctxt "1: date, 2: time"
+msgid "%1$s at %2$s"
+msgstr "%1$s um %2$s"
+
+#: inc/template-tags.php:172
+#@ uptown
+msgid "Your comment is awaiting moderation."
+msgstr "Ihr Kommentar muss noch freigeschaltet werden."
+
+#: inc/template-tags.php:275
+#, php-format
+#@ uptown
+msgid "<span class=\"posted-on\">Posted on %1$s</span><span class=\"byline\"> by %2$s</span>"
+msgstr "<span class=\"posted-on\">Am %1$s veröffentlicht</span><span class=\"byline\"> von %2$s</span>"
+
+#: no-results.php:16
+#@ uptown
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: no-results.php:25
+#, php-format
+#@ uptown
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bereit für den ersten Artikel? <a href=\"%1$s\">Dann hier loslegen</a>."
+
+#: no-results.php:29
+#@ uptown
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Sorry, aber es wurden keine Einträge gefunden. Bitte versuchen Sie es erneut mit veränderten Suchkriterien."
+
+#: no-results.php:34
+#@ uptown
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Es scheint, dass wir nicht finden konnten wonach Sie suchten. Vielleicht hilft eine Suche."
+
+#: search.php:19
+#, php-format
+#@ uptown
+msgid "Search Results for: %s"
+msgstr "Suchergebnis für: %s"
+
+#: searchform.php:10
+#@ uptown
+msgctxt "label"
+msgid "Search for:"
+msgstr "Suche nach:"
+
+#: searchform.php:11
+#@ uptown
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Suche &hellip;"
+
+#: searchform.php:13
+#@ uptown
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suche"
+
+#: sidebar.php:26
+#@ uptown
+msgid "Meta"
+msgstr ""
+
+#: footer.php:23
+#, php-format
+#@ uptown
+msgid "Theme: %1$s by %2$s."
+msgstr "Theme: %1$s von %2$s."
+
+#: inc/customizer.php:88
+#@ uptown
+msgid "Subheader"
+msgstr ""
+
+#: inc/customizer.php:118
+#@ uptown
+msgid "Content"
+msgstr "Inhalt"
+
