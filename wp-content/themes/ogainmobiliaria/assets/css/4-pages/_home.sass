@@ -1,0 +1,314 @@
+// TOP (FIRST)
+
+.first
+  position: relative
+  z-index: 100
+  top: 0
+  height: 100vh
+  margin: 0
+  padding: 0
+  background-color: $calico
+  background-image: url("../img/bg-banner.jpg")
+  background-size: cover
+
+.search-box
+  padding-top: 23rem
+
+  @media screen and (max-width: 768px)
+    padding-top: 20rem
+
+  @media screen and (max-width: 600px)
+    padding-top: 15rem
+
+  .search-field
+    margin-bottom: 1rem
+
+    input[type=text]
+      display: block
+      width: 100%
+      height: 5rem
+      padding: 1.35rem 1rem 1rem 1.5rem
+      text-transform: uppercase
+      font-size: 1.2rem
+      line-height: 5rem
+      letter-spacing: 1px
+      border: none
+      color: rgba( $tuna, .6 )
+      background-color: rgba( $white, .97 )
+      box-shadow: 0 0 20px rgba( $tuna, .07 )
+      transition: all 0.3s ease-in-out
+
+      &:hover, &:focus
+        &::placeholder
+          color: rgba( $tuna, .1 )
+
+      &::placeholder
+        color: rgba( $tuna, .4 )
+        transition: all 0.3s ease-out 0.1s
+
+      &:hover
+        color: rgba( $tuna, .5 )
+        background-color: $white
+
+      &:focus
+        outline: inherit
+        box-shadow: 0 0 20px rgba( $cutty_sark, .2 ), 0 0 1px rgba( $cutty_sark, .5 )
+
+  .search-btn
+
+    input[type=submit]
+      display: inline-block
+      width: 100%
+      height: 5rem
+      font-size: 1.2rem
+      font-weight: 300
+      border: none
+      outline: none
+      color: rgba( $calico, .9 )
+      background-color: rgba( $ralph-red, .9 )
+      transition: all 0.3s ease-in-out
+
+      &:hover, &:focus
+        color: $calico
+        background-color: $ralph-red
+
+// HERO
+
+.hero
+  position: relative
+  display: block
+  height: auto
+  background-color: lighten( $calico, 15% )
+
+.discover
+  padding: 5rem 10rem 0 !important
+  h2
+    display: block
+    margin: 0
+    padding: 0
+    text-align: center
+    text-transform: uppercase
+    font-weight: 400
+    font-size: 1.3rem
+    line-height: 1.2
+    color: darken( $calico, 30% )
+
+    span
+      display: block
+      font-size: 2rem
+      font-weight: 600
+
+  p
+    padding-top: 1.5rem
+    font-size: 1.4rem
+    line-height: 1.7
+    color: darken( $calico, 45% )
+
+.discover-dream,
+.discover-us
+  display: block
+  padding: 2rem
+  height: 25rem
+  text-align: center
+
+  h2
+    font-size: 1rem
+    font-weight: 300
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1px
+    line-height: 1.3
+    color: $white
+
+    span
+      display: block
+      font-size: 1.5rem
+      font-weight: 700
+
+  p
+    margin-bottom: 3rem
+    font-size: 1.15rem
+    line-height: 1.5
+
+  a
+    padding: .6rem 1rem .5rem
+    font-size: .8rem
+    text-transform: uppercase
+    letter-spacing: 1px
+    border: 2px solid $white
+    border-radius: 1px
+    color: $white
+    background-color: transparent
+    transition: all 0.3s ease-in-out
+
+    &:hover,
+    &:focus
+      border-color: rgba( $white, .8 )
+      background-color: rgba( $white, .9 )
+
+.discover-dream
+  background-color: $cardinal
+
+  a:hover, a:hover
+    color: $cardinal
+
+.discover-us
+  background-color: $tuna
+
+  a:hover, a:hover
+    color: $tuna
+
+.discovery
+  margin-bottom: 20px
+
+.discovery-card
+  overflow: hidden
+  width: 100%
+  height: 25rem
+  margin: 0
+  background-color: $white
+
+  img
+    width: 100%
+    height: 25rem
+    object-fit: cover
+    object-position: center
+
+// PROPERTIES
+
+.properties
+  padding-bottom: 4rem
+  color: $tuna
+  background-color: lighten( $calico, 20%)
+
+  h3
+    display: block
+    padding: 1rem 0 .5rem
+    font-weight: 300
+    font-size: 1.3rem
+    text-align: center
+    text-transform: uppercase
+    line-height: 1.3
+    color: $cutty_sark
+
+    span
+      display: block
+      font-weight: 700
+      font-size: 1.5rem
+
+.propertie
+  overflow: hidden
+  position: relative
+  background-color: lighten( $calico, 25%)
+
+  &.sell
+    border-bottom: 2px solid $cardinal
+
+    .propertie-cat,
+    .propertie-price
+      background-color: rgba( $cardinal, .7 )
+
+  &.rent
+    border-bottom: 2px solid $cutty_sark
+
+    .propertie-cat,
+    .propertie-price
+      background-color: rgba( $cutty_sark, .7 )
+
+  &.sold
+    border-bottom: 2px solid $tuna
+
+    .propertie-cat,
+    .propertie-price
+      background-color: rgba( $tuna, .7 )
+
+.propertie-img
+  overflow: hidden
+  width: 100%
+  height: 25rem
+  margin: 0
+  background-color: $white
+
+  img
+    width: 100%
+    height: 25rem
+    object-fit: cover
+    object-position: center
+
+.propertie-cat,
+.propertie-price
+  position: absolute
+  display: block
+  min-width: 4rem
+  height: 3rem
+  padding: .7rem 1rem
+  line-height: 2
+  text-align: center
+  text-transform: uppercase
+  font-weight: 700
+  color: $white
+
+.propertie-cat
+  left: -3rem
+  top: 1.5rem
+  transform: rotate(-45deg)
+  padding-left: 4rem
+  padding-right: 4rem
+  letter-spacing: 2px
+  font-weight: 300
+
+.propertie-price
+  right: 0
+  bottom: 15rem
+  font-size: 1rem
+
+  span
+    font-size: .8rem
+    font-weight: 300
+    text-transform: lowercase
+
+.propertie-info
+  padding: 1rem 1rem .5rem
+
+  h3
+    display: block
+    margin: 0
+    text-align: center
+    text-transform: uppercase
+    letter-spacing: 1px
+
+    span
+      display: block
+      font-weight: 300
+      font-style: italic
+      font-size: .85rem
+      text-transform: capitalize
+      letter-spacing: normal
+      color: rgba( $tuna, .7 )
+
+  p
+    margin: .3rem 0 .7rem
+
+  ul
+    display: table
+    table-layout: fixed
+    width: 100%
+    margin: 0
+    padding: .5rem 0 0 0
+    border-top: 1px solid rgba( $tuna, .3 )
+
+    li
+      display: table-cell
+      text-align: center
+      font-size: .7rem
+      font-weight: 700
+      text-transform: uppercase
+
+      span
+        font-weight: 300
+
+      &:first-child
+        text-align: left
+
+      &:last-child
+        text-align: right

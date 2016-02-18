@@ -1,0 +1,146 @@
+.main-nav
+  position: absolute
+  z-index: 200
+  display: block
+  width: 100%
+  background-color: rgba( $revolver, .7 )
+
+  @media screen and (max-width: 768px)
+    position: absolute
+    top: 0
+
+  h1
+    margin: 0
+
+    a
+      position: absolute
+      z-index: 300
+      top: 0
+      left: 3rem
+      display: inline-block
+      max-width: 160px
+      max-height: 70px
+      margin: 0
+      padding: 12rem 7rem 3rem 7rem
+      text-align: center
+      text-indent: -9999rem
+      white-space: nowrap
+      color: $white
+      background-color: $ralph-red
+
+      @media screen and (max-width: 768px)
+        left: 1rem
+        padding: 5px
+
+  .navigation
+    zoom: 1
+    position: absolute
+    z-index: 200
+    top: 7rem
+    max-width: 100%
+    width: 100%
+    height: 5rem
+    background-color: rgba( $revolver, .7 )
+
+
+    @media screen and (max-width: 768px)
+      position: absolute
+      z-index: 200
+      top: 3.5rem
+      top: 0
+      right: 0
+      display: inline-block
+      float: right
+      width: 100%
+      height: 3.5rem
+      background-color: rgba( $revolver, .95 )
+
+    ul
+      position: relative
+      right: 3rem
+      margin: 0
+      padding: 0
+      text-align: right
+      font-size: .9rem
+      color: $calico
+      overflow: hidden
+      transition: max-height 0.4s
+
+      @media screen and (max-width: 768px)
+        top: 3.5rem
+        right: 0
+        max-height: 0
+        background: rgba( $revolver, .95 )
+
+        &.showing
+          max-height: 35em
+          // margin-bottom: -.9rem
+
+      li
+        display: inline-block
+
+        @media screen and (max-width: 768px)
+          box-sizing: border-box
+          width: 100%
+          text-align: left
+          border-top: 1px solid rgba( $revolver, .8 )
+
+        a
+          display: block
+          padding: 1.63rem
+          line-height: 1.8rem
+          font-weight: 600
+          text-transform: uppercase
+          letter-spacing: .04rem
+          color: inherit
+          background-color: inherit
+          transition: all 0.2s ease-in-out
+
+          &:hover
+            background-color: rgba( $cutty_sark, .7 )
+
+          @media screen and (max-width: 768px)
+            display: block
+            padding: 15px 20px
+
+            &:hover
+              background-color: rgba( $revolver, .5 )
+
+.toggle
+  position: absolute
+  top: 0
+  right: 2rem
+  box-sizing: border-box
+  display: none
+  width: 3rem
+  height: 3rem
+  padding: 15px 10px
+  text-align: right
+  font-size: 1rem
+  background: transparent
+  color: $calico
+  cursor: pointer
+
+  @media screen and (max-width: 768px)
+    display: block
+
+    &::after
+      display: inline-block
+      content: ""
+      width: 0
+      height: 0
+      position: absolute
+      top: 1.6rem
+      right: -1rem
+      margin-left: .375rem
+      border-left: .25rem solid transparent
+      border-right: .25rem solid transparent
+      border-top: 0.25rem solid $calico
+      -webkit-transition: -webkit-transform .12s ease-out
+      transition: -webkit-transform .12s ease-out
+      transition: transform .12s ease-out
+      transition: transform .12s ease-out, -webkit-transform .12s ease-out
+
+  @media screen and (max-width: 768px)
+    &.showing::after
+      transform: rotate(180deg)
