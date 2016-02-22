@@ -22,6 +22,8 @@ get_header(); ?>
     </div>
   </div>
 </section>
+
+<section class="properties extra-pad">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 

@@ -10,7 +10,7 @@
  */
 
 ?>
-
+</section>
 <footer class="footer">
   <div class="footer-top">
     <div class="wrapper">
