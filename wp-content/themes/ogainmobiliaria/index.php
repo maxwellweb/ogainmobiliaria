@@ -37,6 +37,11 @@ get_header(); ?>
           <input type="text" name="dormitorios" placeholder="dormitorios">
         </div>
       </div>
+
+      <video autoplay loop  poster="<?php bloginfo('template_directory'); ?>/assets//img/first-frame.jpg">
+        <source src="<?php bloginfo('template_directory'); ?>/assets/video/oga-inmobiliaria.mp4" type="video/mp4">
+        <source src="<?php bloginfo('template_directory'); ?>/assets/video/oga-inmobiliaria.webm" type="video/webm">
+      </video>
     </div>
   </div>
 </section>
@@ -50,7 +55,7 @@ get_header(); ?>
 
     <div class="discovery col col--4-of-12">
       <figure class="discovery-card">
-        <img src="assets/img/carabanchel.jpg" alt="Carabanchel">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/carabanchel.jpg" alt="Carabanchel">
         <figcaption>Carabanchel</figcaption>
       </figure>
     </div>
@@ -59,14 +64,14 @@ get_header(); ?>
   <div class="row">
     <div class="discovery col col--4-of-12">
       <figure class="discovery-card">
-        <img src="assets/img/mostoles.jpg" alt="Móstoles">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/mostoles.jpg" alt="Móstoles">
         <figcaption>Móstoles</figcaption>
       </figure>
     </div>
 
     <div class="discovery col col--4-of-12">
       <figure class="discovery-card">
-        <img src="assets/img/fuenlabrada.jpg" alt="Fuenlabrada">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/fuenlabrada.jpg" alt="Fuenlabrada">
         <figcaption>Fuenlabrada</figcaption>
       </figure>
     </div>
@@ -91,7 +96,7 @@ get_header(); ?>
 
     <div class="col col--8-of-12">
       <figure class="discovery-card">
-        <img src="assets/img/aravaca.jpg" alt="Aravaca">
+        <img src="<?php bloginfo('template_directory'); ?>/assets/img/aravaca.jpg" alt="Aravaca">
         <figcaption>Aravaca</figcaption>
       </figure>
     </div>
