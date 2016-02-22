@@ -992,6 +992,7 @@ input[type="button"]:focus {
 }
 
 .first {
+  overflow: hidden;
   position: relative;
   z-index: 100;
   top: 0;
@@ -999,11 +1000,27 @@ input[type="button"]:focus {
   margin: 0;
   padding: 0;
   background-color: #E8CAA4;
-  background-image: url("../img/bg-banner.jpg");
+  background-image: url("../img/first-frame.jpg");
   background-size: cover;
+}
+.first video {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: block;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
 }
 
 .search-box {
+  position: relative;
+  z-index: 2;
   padding-top: 23rem;
 }
 @media screen and (max-width: 768px) {
