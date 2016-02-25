@@ -1,8 +1,19 @@
+<style type="text/css">
+
+
+
+
+</style>
+
 <?php
 /**
  * Template: Before Listings Archive
  */
+
+
 global $wpsight_query; ?>
+
+
 
 <?php do_action( 'wpsight_listings_before', $wpsight_query ); ?>
 
