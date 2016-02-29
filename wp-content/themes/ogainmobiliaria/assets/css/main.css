@@ -1217,12 +1217,14 @@ input[type="button"]:focus {
   object-position: center;
 }
 
-.properties {
+.properties,
+.cats-detail {
   padding-bottom: 4rem;
   color: #424254;
   background-color: #fdf9f5;
 }
-.properties h3 {
+.properties h3,
+.cats-detail h3 {
   display: block;
   padding: 1rem 0 0.5rem;
   font-weight: 300;
@@ -1232,7 +1234,8 @@ input[type="button"]:focus {
   line-height: 1.3;
   color: #64908A;
 }
-.properties h3 span {
+.properties h3 span,
+.cats-detail h3 span {
   display: block;
   font-weight: 700;
   font-size: 1.5rem;
@@ -1396,6 +1399,91 @@ input[type="button"]:focus {
 
 .cats-main .search-box {
   padding-top: 0;
+}
+.cats-main .cats-detail {
+  padding-top: 6.2rem;
+}
+
+.rslides_nav {
+  z-index: 100;
+  position: relative;
+  bottom: 20px;
+}
+.rslides_nav .prev,
+.rslides_nav .next {
+  color: white;
+}
+
+.details {
+  margin: 0;
+  padding: 0;
+}
+.details .main-details {
+  clear: both;
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  background-color: #424254;
+}
+.details .main-details li {
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 1rem;
+  border-right: 1px solid #3b3b4b;
+}
+.details .main-details li:last-child {
+  border: none;
+}
+.details .main-details li.price {
+  font-weight: 700;
+  border-right: 1px solid #bf273d;
+  background-color: #CC2A41;
+}
+.details .main-details li.venta {
+  background-color: #3b3b4b;
+  text-transform: uppercase;
+}
+
+.description h2 {
+  display: block;
+  padding: 1rem 0 0.5rem;
+  font-weight: 300;
+  font-size: 1.3rem;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #64908A;
+}
+.description h2 span {
+  display: block;
+  font-weight: 300;
+  font-style: italic;
+  font-size: 0.85rem;
+  text-transform: capitalize;
+  letter-spacing: normal;
+  color: rgba(66, 66, 84, 0.7);
+}
+
+.additional h3 {
+  display: block;
+  padding: 1rem 0 0.5rem;
+  font-weight: 300;
+  font-size: 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 1.3;
+  color: #64908A;
+}
+.additional ul li {
+  display: inline-block;
+  float: right;
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  background-color: #f7eee1;
+  color: #d9a667;
 }
 
 .footer {
