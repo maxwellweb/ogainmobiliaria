@@ -1,6 +1,6 @@
 <meta itemprop="image" content="<?php echo esc_attr( wpsight_get_listing_thumbnail_url( get_the_id(), 'wpsight-large' ) ); ?>" />
 
-<div class="wpsight-listing-section wpsight-listing-section-image">
+<div class="">
 	
 	<?php do_action( 'wpsight_listing_archive_image_before' ); ?>
 

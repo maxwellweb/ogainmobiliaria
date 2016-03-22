@@ -446,7 +446,7 @@ function wpsight_get_listing_thumbnail( $post_id = '', $size = 'thumbnail', $att
  *	
  *	@since 1.0.0
  */
-function wpsight_listing_thumbnail( $post_id = '', $size = 'thumbnail', $attr = '', $default = '', $formatted = 'wpsight-listing-thumbnail' ) {
+function wpsight_listing_thumbnail( $post_id = '', $size = 'thumbnail', $attr = '', $default = '', $formatted = '' ) {
 	echo wpsight_get_listing_thumbnail( $post_id, $size, $attr, $default, $formatted );
 }
 
