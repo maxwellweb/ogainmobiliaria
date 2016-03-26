@@ -1,0 +1,10 @@
+<script id="nf-tmpl-field-submit" type="text/template">
+	<input id="nf-field-<%= id %>" class="nf-element " type="button" value="<%= label %>" <%= disabled %>>
+	<%=	maybeRenderError() %>
+</script>
+
+<script id="nf-tmpl-field-submit-error-msg" type="text/template">
+	<div class="nf-field-submit-error nf-error-msg">
+		Please correct form errors before submitting.
+	</div>
+</script>

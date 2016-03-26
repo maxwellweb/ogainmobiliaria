@@ -41,11 +41,20 @@
     </div>
   </div>
 </footer>
-
 <script>
   $('.toggle').on('click', function(){
     $('.navigation ul, .toggle').toggleClass('showing');
   });
 </script>
+
+<script>
+  $(function() {
+    $(".gallery").responsiveSlides({
+      speed: 200,
+    });
+  });
+</script>
+
+<script src="<?php echo site_url(); ?>/wp-content/themes/ogainmobiliaria/assets/js/responsiveslides.min.js"></script>
 </body>
 </html>

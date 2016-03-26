@@ -2,8 +2,8 @@
 Contributors: wpninjasllc, kstover, jameslaws, wpnzach, kbjohnson90, aman086, daveshine, mordauk, bftrick, helgatheviking
 Tags: form, forms, contact form, custom form, form builder, form creator, form manager, form creation, contact forms, custom forms, forms builder, forms creator, forms manager, forms creation, form administration,
 Requires at least: 4.2
-Tested up to: 4.4
-Stable tag: 2.9.33
+Tested up to: 4.4.2
+Stable tag: 2.9.38
 License: GPLv2 or later
 
 Create forms and manage submissions easily with a simple drag and drop interface. Contact forms, subscription forms, or any other form for WordPress.
@@ -97,13 +97,54 @@ For help and video tutorials, please visit our website: [Ninja Forms Documentati
 
 == Upgrade Notice ==
 
-= 2.9.33 (22 December 2015) =
+= 2.9.38 (22 March 2016) =
+
+*Changes:*
+
+* Changed the way that our add-on list is cached.
+* Added a Ninja Forms Widget back to version 3.0.
 
 *Bugs:*
 
-* Our security filtering was still filtering out good code. We needed to back off the over-zealous filtering a bit more. 
+* Fixed a bug that could cause a fatal error when downgrading to version 2.9.x.
 
 == Changelog ==
+
+= 2.9.38 (22 March 2016) =
+
+*Changes:*
+
+* Changed the way that our add-on list is cached.
+* Added a Ninja Forms Widget back to version 3.0.
+
+*Bugs:*
+
+* Fixed a bug that could cause a fatal error when downgrading to version 2.9.x.
+
+= 2.9.37 (17 March 2016) =
+
+*Bugs:*
+
+* Fixing a bug with session caching.
+* Fixing a problem with merge tag display in FireFox browsers.
+
+= 2.9.36 (14 March 2016) =
+
+*Changes:*
+
+* Removed Freemius prompt for new users. We will re-enable when things are more stable with 3.0. 
+
+= 2.9.35 (14 March 2016) =
+
+*Bugs:*
+
+* Fixing a bug that could cause un-necessary variable output to the screen.
+
+= 2.9.34 (11 March 2016) =
+
+*Changes:*
+
+* Preparing for the release of 3.0. 
 
 = 2.9.33 (22 December 2015) =
 

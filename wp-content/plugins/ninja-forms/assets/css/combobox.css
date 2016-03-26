@@ -55,4 +55,5 @@
 	max-height: 30em;
 	overflow-y: auto;
 	overflow-x: hidden;
+	z-index: 99999;
 }

@@ -8,6 +8,15 @@
  */
 
 get_header(); ?>
+<section class="cats-top">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col col--9-of-12 col--centered">
+        <h2><span>[</span>Propiedades en venta<span>]</span></h2>
+      </div>
+    </div>
+  </div>
+</section>
 <section class="properties extra-pad">
 
 	<div id="primary" class="content-area">

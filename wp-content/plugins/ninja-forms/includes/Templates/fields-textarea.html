@@ -1,0 +1,33 @@
+<script id="nf-tmpl-field-textarea" type="text/template">
+	<textarea id="nf-field-<%= id %>" name="nf-field-<%= id %>" class="<%= classes %> nf-element" <%= renderPlaceholder() %>" <%= maybeDisabled() %> <%= maybeDisableAutocomplete() %> <%= maybeInputLimit() %>><%= value %></textarea>
+
+	<div class="nf-input-limit"></div>
+</script>
+
+<!-- Rich Text Editor Templates -->
+
+<script id="nf-tmpl-rte-media-button" type="text/template">
+    <span class="dashicons dashicons-admin-media"></span>
+</script>
+
+<script id="nf-tmpl-rte-link-button" type="text/template">
+    <span class="dashicons dashicons-admin-links"></span>
+</script>
+
+<script id="nf-tmpl-rte-unlink-button" type="text/template">
+    <span class="dashicons dashicons-editor-unlink"></span>
+</script>
+
+<script id="nf-tmpl-rte-link-dropdown" type="text/template">
+    <div class="summernote-link">
+        URL
+        <input type="url" class="widefat code link-url"> <br />
+        Text
+        <input type="url" class="widefat code link-text"> <br />
+        <label>
+            <input type="checkbox" class="link-new-window"> Open in new window
+        </label>
+        <input type="button" class="cancel-link extra" value="Cancel">
+        <input type="button" class="insert-link extra" value="Insert">
+    </div>
+</script>
