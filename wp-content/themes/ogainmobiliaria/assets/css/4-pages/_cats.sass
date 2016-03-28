@@ -33,3 +33,86 @@
 
   .search-box
     padding-top: 0
+
+  .cats-detail
+    padding-top: 6.2rem
+
+.rslides_nav
+  z-index: 100
+  position: relative
+  bottom: 20px
+
+  .prev,
+  .next
+    color: white
+
+.details
+  margin: 0
+  padding: 0
+
+  .main-details
+    clear: both
+    display: inline-block
+    width: 100%
+    margin: 0
+    padding: 0
+    color: $white
+    background-color: $tuna
+
+    li
+      display: block
+      float: left
+      margin: 0
+      padding: 1rem
+      border-right: 1px solid darken($tuna, 3%)
+
+      &:last-child
+        border: none
+
+      &.price
+        font-weight: 700
+        border-right: 1px solid darken($cardinal, 3%)
+        background-color: $cardinal
+
+      &.venta
+        background-color: darken($tuna, 3%)
+        text-transform: uppercase
+
+.description
+  h2
+    display: block
+    padding: 1rem 0 .5rem
+    font-weight: 300
+    font-size: 1.3rem
+    text-align: center
+    text-transform: uppercase
+    line-height: 1.3
+    color: $cutty_sark
+
+    span
+      display: block
+      font-weight: 300
+      font-style: italic
+      font-size: .85rem
+      text-transform: capitalize
+      letter-spacing: normal
+      color: rgba( $tuna, .7 )
+
+.additional
+  h3
+    display: block
+    padding: 1rem 0 .5rem
+    font-weight: 300
+    font-size: 1rem
+    text-align: right
+    text-transform: uppercase
+    line-height: 1.3
+    color: $cutty_sark
+
+  ul li
+    display: inline-block
+    float: right
+    padding: .5rem 1rem
+    margin: 0 .5rem .5rem 0
+    background-color: lighten( $calico, 15% )
+    color: darken( $calico, 15% )

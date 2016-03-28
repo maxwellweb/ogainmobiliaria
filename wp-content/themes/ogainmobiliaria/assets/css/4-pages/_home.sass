@@ -1,6 +1,7 @@
 // TOP (FIRST)
 
 .first
+  overflow: hidden
   position: relative
   z-index: 100
   top: 0
@@ -8,10 +9,24 @@
   margin: 0
   padding: 0
   background-color: $calico
-  background-image: url("../img/bg-banner.jpg")
+  background-image: url("../img/first-frame.jpg")
   background-size: cover
 
+  video
+    position: absolute
+    z-index: 1
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    display: block
+    min-width: 100%
+    min-height: 100%
+    width: auto
+    height: auto
+
 .search-box
+  position: relative
+  z-index: 2
   padding-top: 23rem
 
   @media screen and (max-width: 768px)
@@ -176,7 +191,8 @@
 
 // PROPERTIES
 
-.properties
+.properties,
+.cats-detail
   padding-bottom: 4rem
   color: $tuna
   background-color: lighten( $calico, 20%)

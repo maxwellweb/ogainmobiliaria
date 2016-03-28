@@ -1400,15 +1400,6 @@ input[type="button"]:focus {
 .cats-main .search-box {
   padding-top: 0;
 }
-.cats-main .search-box h4 {
-  margin: 0;
-  padding: 0 0 1rem 20px;
-  font-size: 1.5rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 1;
-  color: #64908A;
-}
 .cats-main .cats-detail {
   padding-top: 6.2rem;
 }
@@ -1440,7 +1431,7 @@ input[type="button"]:focus {
   display: block;
   float: left;
   margin: 0;
-  padding: 1.1rem 1rem 1rem;
+  padding: 1rem;
   border-right: 1px solid #3b3b4b;
 }
 .details .main-details li:last-child {
@@ -1459,7 +1450,7 @@ input[type="button"]:focus {
 .description h2 {
   display: block;
   padding: 1rem 0 0.5rem;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1.3rem;
   text-align: center;
   text-transform: uppercase;
@@ -1475,16 +1466,11 @@ input[type="button"]:focus {
   letter-spacing: normal;
   color: rgba(66, 66, 84, 0.7);
 }
-.description p {
-  margin-bottom: 2rem;
-  font-size: 1.1rem;
-  line-heigth: 1.5;
-}
 
 .additional h3 {
   display: block;
   padding: 1rem 0 0.5rem;
-  font-weight: 700;
+  font-weight: 300;
   font-size: 1rem;
   text-align: right;
   text-transform: uppercase;
@@ -1498,53 +1484,6 @@ input[type="button"]:focus {
   margin: 0 0.5rem 0.5rem 0;
   background-color: #f7eee1;
   color: #d9a667;
-}
-
-*:last-child {
-  margin-bottom: 0 !important;
-}
-
-article {
-  padding: 3rem 2rem 0;
-  background-color: #f7eee1;
-  border: 0;
-  border-bottom-width: 1px;
-  border-image: linear-gradient(90deg, rgba(230, 230, 230, 0), #e6e6e6 50%, rgba(230, 230, 230, 0) 100%) 5%;
-}
-article:nth-child(even) {
-  background-color: #fbf5ed;
-}
-article > .content {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #424254;
-}
-
-.content h2, .content h3 {
-  text-transform: capitalize;
-  font-weight: 400;
-  color: #424254;
-}
-.content footer {
-  margin-top: 2rem;
-  padding-bottom: 2rem;
-  font-size: 0.9rem;
-  color: #7d7d99;
-}
-
-.pagination {
-  padding: 0 2rem;
-}
-.pagination a {
-  display: inline-block;
-  max-width: 50%;
-}
-.pagination .prev {
-  float: left;
-}
-.pagination .next {
-  float: right;
-  text-align: right;
 }
 
 .footer {
