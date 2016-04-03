@@ -620,17 +620,17 @@ class PLL_Admin_Filters_Term {
 		// FIXME can we simplify how we deal with the admin language filter?
 		// the language filter selection has just changed
 		// test $screen->base to avoid interference between the language filter and the post language selection and the category parent dropdown list
-		elseif ( ! empty( $_GET['lang'] ) && ! ( isset( $screen ) && in_array( $screen->base, array( 'post', 'edit-tags' ) ) ) ) {
+		elseif ( ! empty( $_GET['lang'] ) && ! ( isset( $screen ) && in_array( $screen->base, array( 'post', 'edit-tags', 'term' ) ) ) ) {
 			if ( 'all' != $_GET['lang'] ) {
 				$lang = $this->model->get_language( $_GET['lang'] );
 			}
-			elseif ( 'edit-tags' == $screen->base && isset( $args['class'] ) ) {
+			elseif ( in_array( $screen->base, array( 'edit-tags', 'term' ) ) && isset( $args['class'] ) ) {
 				$lang = $this->pref_lang; // parent dropdown
 			}
 		}
 
 		// again the language filter
-		elseif ( ! empty( $this->curlang ) && ( isset( $screen ) && 'post' != $screen->base && ! ( 'edit-tags' == $screen->base && isset( $args['class'] ) ) ) ) { // don't apply to post edit and the category parent dropdown list
+		elseif ( ! empty( $this->curlang ) && ( isset( $screen ) && 'post' != $screen->base && ! ( in_array( $screen->base, array( 'edit-tags', 'term' ) ) && isset( $args['class'] ) ) ) ) { // don't apply to post edit and the category parent dropdown list
 		 	$lang = $this->curlang;
 		}
 
@@ -649,7 +649,7 @@ class PLL_Admin_Filters_Term {
 		}
 
 		// for a new post ( or the parent dropdown list of a new term )
-		elseif ( isset( $screen ) && ( 'post' == $screen->base || ( 'edit-tags' == $screen->base && isset( $args['class'] ) ) ) ) {
+		elseif ( isset( $screen ) && ( 'post' == $screen->base || ( in_array( $screen->base, array( 'edit-tags', 'term' ) ) && isset( $args['class'] ) ) ) ) {
 			$lang = $this->pref_lang;
 		}
 

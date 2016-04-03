@@ -92,7 +92,7 @@ class PLL_Admin_Base extends PLL_Base {
 		$scripts = array(
 			'post'  => array( array( 'post', 'media', 'async-upload', 'edit' ),  array( 'jquery', 'wp-ajax-response', 'post', 'jquery-ui-autocomplete' ), 0 , 1 ),
 			'media' => array( array( 'upload' ), array( 'jquery' ), 0 , 1 ),
-			'term'  => array( array( 'edit-tags' ), array( 'jquery', 'wp-ajax-response', 'jquery-ui-autocomplete' ), 0, 1 ),
+			'term'  => array( array( 'edit-tags', 'term' ), array( 'jquery', 'wp-ajax-response', 'jquery-ui-autocomplete' ), 0, 1 ),
 			'user'  => array( array( 'profile', 'user-edit' ), array( 'jquery' ), 0 , 0 ),
 		);
 

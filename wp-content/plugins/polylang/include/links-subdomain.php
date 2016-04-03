@@ -76,6 +76,7 @@ class PLL_Links_Subdomain extends PLL_Links_Permalinks {
 	 * @return array list of hosts
 	 */
 	public function get_hosts() {
+		$hosts = array();
 		foreach ( $this->model->get_languages_list() as $lang ) {
 			$hosts[] = parse_url( $this->home_url( $lang ), PHP_URL_HOST );
 		}

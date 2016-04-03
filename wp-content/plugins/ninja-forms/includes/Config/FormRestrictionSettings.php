@@ -20,7 +20,7 @@ return apply_filters( 'ninja_forms_from_restriction_settings', array(
                 'label' => __( 'Require user to be logged in to view form?', 'ninja-forms' ),
                 'width' => 'one-half',
                 'group' => 'primary',
-                'value' => TRUE,
+                'value' => FALSE,
                 'help' => __( 'Does apply to form preview.', 'ninja-forms' )
             ),
 
@@ -35,9 +35,6 @@ return apply_filters( 'ninja_forms_from_restriction_settings', array(
                 'width' => 'full',
                 'group' => 'primary',
                 'value' => '',
-
-                //TODO: Add following text below the WYSIWYG.
-                //Message shown to users if the "logged in" checkbox above is checked and they are not logged-in.
             ),
         )
     ),

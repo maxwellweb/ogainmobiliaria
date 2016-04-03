@@ -53,6 +53,8 @@ final class NF_MergeTags_Fields extends NF_Abstracts_MergeTags
 
         if( ! isset( $field[ 'key' ] ) ) return;
 
+        $callback = 'field_' . $field[ 'key' ];
+
         $this->merge_tags[ $callback ] = array(
             'id' => $field[ 'key' ],
             'tag' => '{field:' . $field[ 'key' ] . '}',

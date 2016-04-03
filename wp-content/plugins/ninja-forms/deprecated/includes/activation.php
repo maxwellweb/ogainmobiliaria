@@ -187,6 +187,7 @@ function ninja_forms_activation( $network_wide ){
 	 	}
 
 	 	update_option( "ninja_forms_settings", $opt );
+		update_option( 'ninja_forms_version', NF_PLUGIN_VERSION );
 
 	 	// check for an existing form
 	 	$starter_form_exists = ninja_forms_starter_form_exists();

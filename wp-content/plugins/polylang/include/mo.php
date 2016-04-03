@@ -36,7 +36,8 @@ class PLL_MO extends MO {
 			$strings[] = array( $entry->singular, $this->translate( $entry->singular ) );
 		}
 
-		$post = get_post( $lang->mo_id, ARRAY_A ); // wp_insert_post wants an array
+		// we need to make sure that $post is empty when $lang->mo_id is empty: see https://wordpress.org/support/topic/problem-when-adding-a-language
+		$post = empty( $lang->mo_id ) ? array() : get_post( $lang->mo_id, ARRAY_A ); // wp_insert_post wants an array
 
 		$post['post_title'] = 'polylang_mo_' . $lang->term_id;
 		// json_encode would take less space but is slower to decode

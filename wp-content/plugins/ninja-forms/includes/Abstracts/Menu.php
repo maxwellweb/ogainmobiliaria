@@ -69,7 +69,7 @@ abstract class NF_Abstracts_Menu
             $this->menu_slug = strtolower( preg_replace( '/[^A-Za-z0-9-]+/', '-', $this->menu_title ) );
         }
 
-        $this->capability = add_filter( 'menu_' . $this->menu_slug . '_capability', $this->capability );
+        $this->capability = apply_filters( 'menu_' . $this->menu_slug . '_capability', $this->capability );
 
         add_action( 'admin_menu', array( $this, 'register' ) );
     }

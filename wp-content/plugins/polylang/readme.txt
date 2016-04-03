@@ -3,8 +3,8 @@ Contributors: Chouby
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=CCWWYUUQV8F4E
 Tags: multilingual, bilingual, translate, translation, language, multilanguage, international, localization
 Requires at least: 4.0
-Tested up to: 4.4
-Stable tag: 1.8.4
+Tested up to: 4.5
+Stable tag: 1.8.5
 License: GPLv2 or later
 
 Making WordPress multilingual
@@ -70,6 +70,12 @@ See http://polylang.wordpress.com/documentation/contribute/
 4. The Edit Post screen with the Languages metabox
 
 == Changelog ==
+
+= 1.8.5 (2016-04-03) =
+
+* Revert from $_SERVER['PHP_SELF'] to $_SERVER['SCRIPT_FILENAME'] to detect if the user is on login/register/signup page
+* Fix incompatibility introduced by WP 4.5 in Edit single taxonomy term screen
+* Fix existing post overriden when creating a language and a conflicting plugin sets the global $post on languages pages
 
 = 1.8.4 (2016-03-06) =
 

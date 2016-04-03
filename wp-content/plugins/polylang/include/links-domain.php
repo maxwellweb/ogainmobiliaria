@@ -89,6 +89,7 @@ class PLL_Links_Domain extends PLL_Links_Permalinks {
 	 * @return array list of hosts
 	 */
 	public function get_hosts() {
+		$hosts = array();
 		foreach ( $this->options['domains'] as $domain ) {
 			$hosts[] = parse_url( $domain, PHP_URL_HOST );
 		}
