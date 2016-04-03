@@ -1,0 +1,511 @@
+/*
+Normalize Ninja Forms fields with default structure
+---------------------------------------------*/
+/*
+ * Ninja Forms - Form Display Structure
+ */
+.ninja-forms-form-wrap *,
+.ninja-forms-form-wrap *:after,
+.ninja-forms-form-wrap *:before {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box; }
+
+.field-wrap::after,
+#ninja_forms_required_items::after {
+  clear: both;
+  content: "";
+  display: block; }
+
+.nf-fields input,
+.nf-fields select,
+.nf-fields textarea {
+  width: auto;
+  height: auto;
+  vertical-align: inherit; }
+
+/* ---------------------------------
+RADIO & CHECKBOX LISTS
+----------------------------------*/
+.list-radio-wrap ul, .list-radio-wrap li,
+.list-checkbox-wrap ul,
+.list-checkbox-wrap li {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .list-radio-wrap ul input, .list-radio-wrap li input,
+  .list-checkbox-wrap ul input,
+  .list-checkbox-wrap li input {
+    margin-right: 5px; }
+
+.list-radio-wrap li,
+.list-checkbox-wrap li {
+  padding-left: 10px; }
+
+/* ---------------------------------
+STAR RATING
+----------------------------------*/
+.starrating .star {
+  border-bottom: 0; }
+
+/* ---------------------------------
+HONEYPOT
+----------------------------------*/
+.nf-hp {
+  visibility: hidden; }
+
+.note-popover {
+  display: none !important; }
+
+.nf-form-wrap .note-editor {
+  border: 0 !important; }
+  .nf-form-wrap .note-editor .note-toolbar::after {
+    clear: both;
+    content: "";
+    display: block; }
+  .nf-form-wrap .note-editor .note-editable {
+    background: #f9f9f9;
+    border: 1px solid #f1f1f1;
+    display: block; }
+    .nf-form-wrap .note-editor .note-editable p {
+      font-size: 16px; }
+    .nf-form-wrap .note-editor .note-editable ul {
+      list-style-type: disc;
+      margin-left: 2em; }
+    .nf-form-wrap .note-editor .note-editable table td {
+      border: 1px solid #ccc;
+      width: auto; }
+  .nf-form-wrap .note-editor .modal {
+    display: none; }
+  .nf-form-wrap .note-editor .btn-group {
+    float: left; }
+    .nf-form-wrap .note-editor .btn-group.note-tools {
+      float: right; }
+  .nf-form-wrap .note-editor .btn {
+    background: #f9f9f9;
+    border: 0;
+    border-radius: 4px;
+    color: #666;
+    cursor: pointer;
+    margin-right: 2px;
+    padding-top: 4px; }
+    .nf-form-wrap .note-editor .btn.disabled {
+      background: transparent;
+      color: #aaa; }
+      .nf-form-wrap .note-editor .btn.disabled .merge-tags {
+        background: #f9f9f9;
+        color: #666; }
+  .nf-form-wrap .note-editor button[type=button] {
+    padding: 4px;
+    width: auto;
+    height: auto; }
+  .nf-form-wrap .note-editor .dropdown-toggle {
+    position: relative;
+    top: 0; }
+    .nf-form-wrap .note-editor .dropdown-toggle::after {
+      content: "";
+      width: 0; }
+
+.nf-form-wrap .tooltip {
+  position: absolute;
+  z-index: 1070;
+  display: block;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: left;
+  text-align: start;
+  text-decoration: none;
+  text-shadow: none;
+  text-transform: none;
+  letter-spacing: normal;
+  word-break: normal;
+  word-spacing: normal;
+  word-wrap: normal;
+  white-space: normal;
+  filter: alpha(opacity=0);
+  opacity: 0;
+  line-break: auto; }
+
+.nf-form-wrap .tooltip.in {
+  filter: alpha(opacity=90);
+  opacity: .9; }
+
+.nf-form-wrap .tooltip.top {
+  padding: 5px 0;
+  margin-top: -3px; }
+
+.nf-form-wrap .tooltip.right {
+  padding: 0 5px;
+  margin-left: 3px; }
+
+.nf-form-wrap .tooltip.bottom {
+  padding: 5px 0;
+  margin-top: 3px; }
+
+.nf-form-wrap .tooltip.left {
+  padding: 0 5px;
+  margin-left: -3px; }
+
+.nf-form-wrap .tooltip-inner {
+  max-width: 200px;
+  padding: 3px 8px;
+  color: #fff;
+  text-align: center;
+  background-color: #000;
+  border-radius: 4px; }
+
+.nf-form-wrap .tooltip-arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid; }
+
+.nf-form-wrap .tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000; }
+
+.nf-form-wrap .tooltip.top-left .tooltip-arrow {
+  right: 5px;
+  bottom: 0;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000; }
+
+.nf-form-wrap .tooltip.top-right .tooltip-arrow {
+  bottom: 0;
+  left: 5px;
+  margin-bottom: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #000; }
+
+.nf-form-wrap .tooltip.right .tooltip-arrow {
+  top: 50%;
+  left: 0;
+  margin-top: -5px;
+  border-width: 5px 5px 5px 0;
+  border-right-color: #000; }
+
+.nf-form-wrap .tooltip.left .tooltip-arrow {
+  top: 50%;
+  right: 0;
+  margin-top: -5px;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #000; }
+
+.nf-form-wrap .tooltip.bottom .tooltip-arrow {
+  top: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000; }
+
+.nf-form-wrap .tooltip.bottom-left .tooltip-arrow {
+  top: 0;
+  right: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000; }
+
+.nf-form-wrap .tooltip.bottom-right .tooltip-arrow {
+  top: 0;
+  left: 5px;
+  margin-top: -5px;
+  border-width: 0 5px 5px;
+  border-bottom-color: #000; }
+
+.nf-form-wrap .dropdown-menu {
+  position: absolute;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  font-size: 14px;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ccc;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175); }
+
+.nf-form-wrap .dropdown-menu.pull-right {
+  right: 0;
+  left: auto; }
+
+.nf-form-wrap .dropdown-menu .divider {
+  height: 1px;
+  margin: 9px 0;
+  overflow: hidden;
+  background-color: #e5e5e5; }
+
+.nf-form-wrap .dropdown-menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap; }
+
+.nf-form-wrap .dropdown-menu > li > a:hover,
+.nf-form-wrap .dropdown-menu > li > a:focus {
+  color: #262626;
+  text-decoration: none;
+  background-color: #f5f5f5; }
+
+.nf-form-wrap .dropdown-menu > .active > a,
+.nf-form-wrap .dropdown-menu > .active > a:hover,
+.nf-form-wrap .dropdown-menu > .active > a:focus {
+  color: #fff;
+  text-decoration: none;
+  background-color: #337ab7;
+  outline: 0; }
+
+.nf-form-wrap .dropdown-menu > .disabled > a,
+.nf-form-wrap .dropdown-menu > .disabled > a:hover,
+.nf-form-wrap .dropdown-menu > .disabled > a:focus {
+  color: #777; }
+
+.nf-form-wrap .dropdown-menu > .disabled > a:hover,
+.nf-form-wrap .dropdown-menu > .disabled > a:focus {
+  text-decoration: none;
+  cursor: not-allowed;
+  background-color: transparent;
+  background-image: none;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false); }
+
+.nf-form-wrap .open > .dropdown-menu {
+  display: block; }
+
+.nf-form-wrap .open > a {
+  outline: 0; }
+
+.nf-form-wrap .dropdown-menu-right {
+  right: 0;
+  left: auto; }
+
+.nf-form-wrap .dropdown-menu-left {
+  right: auto;
+  left: 0; }
+
+.nf-form-wrap .dropdown-header {
+  display: block;
+  padding: 3px 20px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  color: #777;
+  white-space: nowrap; }
+
+.nf-form-wrap .dropdown-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 990; }
+
+.nf-form-wrap .pull-right > .dropdown-menu {
+  right: 0;
+  left: auto; }
+
+.nf-form-wrap .dropup .caret,
+.nf-form-wrap .navbar-fixed-bottom .dropdown .caret {
+  content: "";
+  border-top: 0;
+  border-bottom: 4px dashed;
+  border-bottom: 4px solid \9; }
+
+.nf-form-wrap .dropup .dropdown-menu,
+.nf-form-wrap .navbar-fixed-bottom .dropdown .dropdown-menu {
+  top: auto;
+  bottom: 100%;
+  margin-bottom: 2px; }
+
+@media (min-width: 768px) {
+  .nf-form-wrap .navbar-right .dropdown-menu {
+    right: 0;
+    left: auto; }
+  .nf-form-wrap .navbar-right .dropdown-menu-left {
+    right: auto;
+    left: 0; } }
+
+.nf-form-wrap .btn-group-justified > .btn-group .dropdown-menu {
+  left: auto; }
+
+.nf-form-wrap .nav-tabs.nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto; }
+
+.nf-form-wrap .nav-justified > .dropdown .dropdown-menu {
+  top: auto;
+  left: auto; }
+
+.nf-form-wrap .nav-tabs .dropdown-menu {
+  margin-top: -1px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+@media (max-width: 767px) {
+  .nf-form-wrap .navbar-nav .open .dropdown-menu {
+    position: static;
+    float: none;
+    width: auto;
+    margin-top: 0;
+    background-color: transparent;
+    border: 0;
+    box-shadow: none; }
+  .nf-form-wrap .navbar-nav .open .dropdown-menu > li > a,
+  .nf-form-wrap .navbar-nav .open .dropdown-menu .dropdown-header {
+    padding: 5px 15px 5px 25px; }
+  .nf-form-wrap .navbar-nav .open .dropdown-menu > li > a {
+    line-height: 20px; }
+  .nf-form-wrap .navbar-nav .open .dropdown-menu > li > a:hover,
+  .nf-form-wrap .navbar-nav .open .dropdown-menu > li > a:focus {
+    background-image: none; } }
+
+.nf-form-wrap .navbar-nav > li > .dropdown-menu {
+  margin-top: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0; }
+
+.nf-form-wrap .navbar-fixed-bottom .navbar-nav > li > .dropdown-menu {
+  margin-bottom: 0;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0; }
+
+@media (max-width: 767px) {
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #777; }
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #333;
+    background-color: transparent; }
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #555;
+    background-color: #e7e7e7; }
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .nf-form-wrap .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #ccc;
+    background-color: transparent; } }
+
+@media (max-width: 767px) {
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808; }
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
+    background-color: #080808; }
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #9d9d9d; }
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: transparent; }
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #fff;
+    background-color: #080808; }
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .nf-form-wrap .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444;
+    background-color: transparent; } }
+
+/*
+Make sure all Ninja Forms label positons function properly
+---------------------------------------------*/
+.nf-fields .label-above > label,
+.nf-fields .label-below > label,
+.nf-fields .label-hidden > label {
+  display: block; }
+
+.nf-fields .label-above > input,
+.nf-fields .label-above textarea,
+.nf-fields .label-above select,
+.nf-fields .label-above .pikaday__container,
+.nf-fields .label-above .pikaday__display,
+.nf-fields .label-below > input,
+.nf-fields .label-below textarea,
+.nf-fields .label-below select,
+.nf-fields .label-below .pikaday__container,
+.nf-fields .label-below .pikaday__display,
+.nf-fields .label-hidden > input,
+.nf-fields .label-hidden textarea,
+.nf-fields .label-hidden select,
+.nf-fields .label-hidden .pikaday__container,
+.nf-fields .label-hidden .pikaday__display {
+  width: 100%; }
+
+.nf-fields .label-above input[type="submit"],
+.nf-fields .label-above input[type="button"],
+.nf-fields .label-above button,
+.nf-fields .label-below input[type="submit"],
+.nf-fields .label-below input[type="button"],
+.nf-fields .label-below button,
+.nf-fields .label-hidden input[type="submit"],
+.nf-fields .label-hidden input[type="button"],
+.nf-fields .label-hidden button {
+  width: auto; }
+
+.nf-fields .label-right {
+  vertical-align: middle; }
+  .nf-fields .label-right > label {
+    display: inline-block; }
+  .nf-fields .label-right > input,
+  .nf-fields .label-right textarea,
+  .nf-fields .label-right select,
+  .nf-fields .label-right .pikaday__container {
+    width: 50%; }
+  .nf-fields .label-right .pikaday__display {
+    width: 100%; }
+  .nf-fields .label-right > input[type=radio],
+  .nf-fields .label-right input[type=checkbox] {
+    width: auto; }
+  .nf-fields .label-right.textarea-wrap {
+    vertical-align: top; }
+  .nf-fields .label-right ul {
+    float: left;
+    width: 50%; }
+
+.nf-fields .label-left {
+  vertical-align: middle; }
+  .nf-fields .label-left > label {
+    display: inline-block;
+    float: left;
+    line-height: 16px;
+    padding: 16px;
+    text-align: right;
+    width: 49%; }
+  .nf-fields .label-left > input,
+  .nf-fields .label-left textarea,
+  .nf-fields .label-left select,
+  .nf-fields .label-left .pikaday__container {
+    float: right;
+    width: 49%; }
+  .nf-fields .label-left .pikaday__display {
+    width: 100%; }
+  .nf-fields .label-left > input[type=radio],
+  .nf-fields .label-left > input[type=checkbox] {
+    float: none;
+    width: auto;
+    margin-left: 10px; }
+  .nf-fields .label-left.textarea-wrap {
+    vertical-align: top; }
+  .nf-fields .label-left ul {
+    float: right;
+    width: 49%; }
+
+/*# sourceMappingURL=display-structure.css.map */

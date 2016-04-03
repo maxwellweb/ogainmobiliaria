@@ -1,0 +1,25 @@
+<script id="nf-tmpl-field-listcheckbox" type="text/template">
+    <ul>
+        <%= renderOptions() %>
+    </ul>
+</script>
+
+<script id='nf-tmpl-field-listcheckbox-option' type='text/template'>
+    <li>
+        <label><input type="checkbox" name="nf-field-<%= fieldID %>" class="<%= classes %> nf-element" value="<%= value %>" <%= ( 1 == selected ) ? 'checked="checked"' : '' %>> <%= label %></label>
+    </li>
+</script>
+
+<script id='nf-tmpl-field-listcheckbox-other' type='text/template'>
+    <li>
+        <label>
+            <input type="checkbox" name="nf-field-<%= fieldID %>" class="<%= classes %> nf-element" value="nf-other" <%= ( ! valueFound ) ? 'checked="checked"' : '' %>>
+            Other
+            <%= renderOtherText() %>
+        </label>
+    </li>
+</script>
+
+<script id='nf-tmpl-field-listcheckbox-other-text' type='text/template'>
+    <input type="text" name="nf-field-<%= fieldID %>" class="nf-element" value="<%= currentValue %>">
+</script>

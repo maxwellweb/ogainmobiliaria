@@ -1,0 +1,29 @@
+<script id="nf-tmpl-field-product" type="text/template">
+    <div class="nf-product-field <%= classes %>">
+        <%= renderProduct() %>
+    </div>
+</script>
+
+<script id="nf-tmpl-product-single" type="text/template">
+    <span class="nf-product-price-label">Price:</span>
+    <span class="nf-product-price">$<%= product_price %></span>
+    <%= renderProductQuantity() %>
+</script>
+
+<script id="nf-tmpl-product-dropdown" type="text/template">
+    <span for="nf-field-<%= id %>">
+    <select id="nf-field-<%= id %>" name="nf-field-<%= id %>" class="<%= classes %> nf-element">
+        <%= renderOptions() %>
+        <%= renderProductQuantity() %>
+    </select>
+    </span>
+</script>
+
+<script id="nf-tmpl-product-dropdown-option" type="text/template">
+    <option value="<%= value %>" <%= ( 1 == selected ) ? 'selected="selected"' : '' %>><%= label %></option>
+</script>
+
+<script id="nf-tmpl-product-quantity" type="text/template">
+    <span class="nf-product-quantity-label">Quantity:</span>
+    <span class="nf-product-quantity"><input id="nf-field-qty-<%= id %>" name="nf-field-qty-<%= id %>" class="nf-field-qty nf-element" type="number" min="0" size="10" value="<%= value %>"></span></span>
+</script>

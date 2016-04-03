@@ -1,0 +1,65 @@
+<script id="nf-tmpl-field-wrap" type="text/template">
+	<div id="nf-field-<%= id %>-wrap" class="<%= renderWrapClass() %>" data-field-id="<%= id %>">
+		<%
+		/*
+		 * This is our main field template. It's called for every field type.
+		 * Note that must have ONE top-level, wrapping element. i.e. a div/span/etc that wraps all of the template.
+		 *
+		 * <div>
+		 * 	 <div>
+		 *   	Cool Stuff
+		 * 	 </div>
+		 *   <span>
+		 * 		Hello World!
+		 *   </span>
+		 * </div>
+		 *
+		 * is OK.
+		 *
+		 * <div>
+		 * 		Cool Stuff
+		 * </div>
+		 * <span>
+		 * 		Hello World!
+		 * </span>
+		 *
+		 * is NOT ok because each of those items is on the top-level.
+		 */
+
+		/*
+		 * Render our description text if the position is set to before everything.
+		 */
+		%>
+		 <%= ( 'undefined' != typeof desc_pos && 'before_everything' == desc_pos ) ? renderDescText() : '' %>
+		<%
+		/*
+		 * Render our label if the position is set to above or left.
+		 */
+		%>
+		<%= ( 'above' == label_pos || 'left' == label_pos ) ? renderLabel() : '' %>
+		<%
+		/*
+		 * Render our field element. Uses the template for the field being rendered.
+		 */
+		%>
+		<%= renderElement() %>
+		<%
+		/*
+		 * Render our label if the position is set to below or right.
+		 */
+		%>
+		<%= ( 'below' == label_pos || 'right' == label_pos ) ? renderLabel() : '' %>
+		<%
+		/*
+		 * Render our description text if the position is set to after everything.
+		 */
+		%>
+		 <%= ( 'undefined' != typeof desc_pos && 'after_everything' == desc_pos ) ? renderDescText() : '' %>
+		<%
+		/*
+		 * Render our error section if we have an error.
+		 */
+		%>
+		<div class="nf-error-wrap"></div>
+	</div>
+</script>
