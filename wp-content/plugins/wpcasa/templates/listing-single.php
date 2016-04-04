@@ -75,7 +75,7 @@ global $listing; ?>
 				            </div>
 
 				            <div class="map">
-				              El mapa de Google…
+				              <?php wpsight_get_template( 'listing-single-location.php' ); ?>
 				            </div>
 				          </div>
 				        </div>
