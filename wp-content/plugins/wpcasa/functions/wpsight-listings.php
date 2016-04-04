@@ -236,6 +236,9 @@ function wpsight_get_listing_details( $post_id = '', $details = false, $formatte
 	return WPSight_Listings::get_listing_details( $post_id, $details, $formatted );
 }
 
+function wpsight_get_listing_details2( $post_id = '', $details = false, $formatted = 'wpsight-listing-details' ) {
+	return WPSight_Listings::get_listing_details2( $post_id, $details, $formatted );
+}
 /**
  *	wpsight_listing_details()
  *	
@@ -251,11 +254,27 @@ function wpsight_get_listing_details( $post_id = '', $details = false, $formatte
 function wpsight_listing_details( $post_id = '', $details = false, $formatted = 'wpsight-listing-details' ) {
 
 	$listing_details = wpsight_get_listing_details( $post_id, $details, $formatted );
-
+	//print_r(); die();
 	// Only echo if not array
 
 	if ( ! is_array( $listing_details ) ) {
 		echo $listing_details;
+
+	} else {
+		// Echo print_r array for debugging
+		?><pre><?php print_r( $listing_details ); ?></pre><?php
+	}
+}
+
+function wpsight_listing_details2( $post_id = '', $details = false, $formatted = 'wpsight-listing-details' ) {
+
+	$listing_details = wpsight_get_listing_details2( $post_id, $details, $formatted );
+	//print_r(); die();
+	// Only echo if not array
+
+	if ( ! is_array( $listing_details ) ) {
+		echo $listing_details;
+
 	} else {
 		// Echo print_r array for debugging
 		?><pre><?php print_r( $listing_details ); ?></pre><?php

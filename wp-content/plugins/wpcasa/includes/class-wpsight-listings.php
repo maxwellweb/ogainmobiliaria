@@ -822,6 +822,7 @@ class WPSight_Listings {
 
 		// Set formatted details
 
+
 		if ( $formatted !== false ) {
 
 			foreach ( $details as $detail ) {
@@ -845,27 +846,108 @@ class WPSight_Listings {
 			}
 
 			if ( $listing_details )
-				$listing_details = '<div class="' . sanitize_html_class( $formatted ) . ' clearfix">' . $listing_details . '</div><!-- .' . sanitize_html_class( $formatted ) . ' -->';
+				$listing_details =  $listing_details;
 
 			// Set array of unformatted details
 
 		} else {
 
+
 			foreach ( $details as $detail ) {
 
-				$listing_details[$detail] = array(
+			     $listing_details[$detail] = array(
 					'label' => wpsight_get_detail( $detail, 'label' ),
 					'unit'  => wpsight_get_detail( $detail, 'unit' ),
 					'value' => wpsight_get_listing_detail( $detail )
+
 				);
 
 			}
 
 		}
 
+		
+	
+		
 		return apply_filters( 'wpsight_get_listing_details', $listing_details, $post_id, $details, $formatted );
 
 	}
+
+		public static function get_listing_details2( $post_id = '', $details = false, $formatted = 'wpsight-listing-details' ) {
+
+		if ( ! $post_id )
+			$post_id = get_the_ID();
+
+		// Get post meta data
+		$post_meta = get_post_custom( $post_id );
+
+		// Get standard listing details
+		$standard_details = wpsight_details();
+
+		// Set default details
+
+		if ( $details === false || ! is_array( $details ) )
+			$details = array_keys( $standard_details );
+
+		// Loop through details
+
+		$listing_details = '';
+
+		// Set formatted details
+
+
+		if ( $formatted !== false ) {
+
+			foreach ( $details as $detail ) {
+
+				if ( wpsight_get_listing_detail( $detail, $post_id ) ) {
+
+					$listing_details .= '<li><span class="listing-' . wpsight_dashes( $detail ) . ' listing-details-detail" title="' . wpsight_get_detail( $detail, 'label' ) . '">';
+
+					$listing_details .= '<span class="listing-details-label">' . wpsight_get_detail( $detail, 'label' ) . ':</span> ';
+					$listing_details .= '<span class="listing-details-value">' . wpsight_get_listing_detail( $detail, $post_id );
+
+					if ( wpsight_get_detail( $detail, 'unit' ) )
+						$listing_details .= ' ' . wpsight_get_measurement( wpsight_get_detail( $detail, 'unit' ) );
+					
+					$listing_details .= '</span>';
+
+					$listing_details .= '</span></li><!-- .listing-' . wpsight_dashes( $detail ) . ' -->' . "\n";
+
+				}
+
+			}
+
+			if ( $listing_details )
+				$listing_details =  $listing_details;
+
+			// Set array of unformatted details
+
+		} else {
+
+
+			foreach ( $details as $detail ) {
+
+			     $listing_details[$detail] = array(
+					'label' => wpsight_get_detail( $detail, 'label' ),
+					'unit'  => wpsight_get_detail( $detail, 'unit' ),
+					'value' => wpsight_get_listing_detail( $detail )
+
+				);
+
+			}
+
+		}
+
+		
+	
+		
+		return apply_filters( 'wpsight_get_listing_details', $listing_details, $post_id, $details, $formatted );
+
+	}
+
+
+	
 
 	/**
 	 * get_listing_summary()

@@ -1,0 +1,1 @@
+<?php wpsight_listing_price( $listing->ID ); ?>

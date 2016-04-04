@@ -1,0 +1,1 @@
+<?php  wpsight_listing_id( $listing->ID ); ?>

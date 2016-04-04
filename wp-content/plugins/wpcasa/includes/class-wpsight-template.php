@@ -244,21 +244,23 @@ class WPSight_Template {
 	public static function get_listing_title( $post_id = '', $actions = array() ) {
 
 		// Use global post ID if not defined
+		// 
 
 		if ( ! $post_id )
 			$post_id = get_the_ID();
 
 		ob_start(); ?>
 
-	    <div class="wpsight-listing-title clearfix">
+	    <!--<div class="wpsight-listing-title clearfix">-->
 
-		    <h1 class="entry-title">
+		   <!-- <h1 class="entry-title">-->
 				<?php echo get_the_title( $post_id ); ?>
-			</h1>
+			<!--</h1>-->
 
-		    <?php wpsight_listing_actions( $post_id, $actions ); ?>
+		    <?php /*wpsight_listing_actions( $post_id, $actions );*/ ?>
 
-		</div><?php
+		<!--</div>-->
+		<?php
 
 		return apply_filters( 'wpsight_get_listing_title', ob_get_clean(), $post_id, $actions );
 
