@@ -22,7 +22,7 @@ define('DB_NAME', 'ogainmo');
 define('DB_USER', 'root');
 
 /** Tu contraseña de MySQL */
-define('DB_PASSWORD', 'sofiaxiomara');
+define('DB_PASSWORD', 'mysql');
 
 /** Host de MySQL (es muy probable que no necesites cambiarlo) */
 define('DB_HOST', 'localhost');
