@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 
 <header class="main-nav">
-  <h1><a href="/" title="Volver al Inicio">Oga Inmobiliaria</a></h1> <!-- LOGO -->
+  <h1><a href="<?php echo home_url( '/' ); ?>" title="Volver al Inicio">Oga Inmobiliaria</a></h1> <!-- LOGO -->
   <nav class="navigation" role="navigation">
     <div class="toggle">Menu</div>
     <ul>

@@ -46,62 +46,7 @@ get_header(); ?>
   </div>
 </section>
 <!-- FIN SEARCH -->
-<section class="hero extra-pad">
-  <div class="row">
-    <div class="discover col col--8-of-12">
-      <h2>Descubre la <span>casa de tus sueños</span></h2>
-      <p>Queremos que la experiencia de buscar tu hogar sea única y por eso nos comprometemos a ayudarte a encontrar el mejor lugar que se adapte a tus necesidades. Nuestro deseo es que puedas a través de nosotros tener la casa de tus sueños.</p>
-    </div>
 
-    <div class="discovery col col--4-of-12">
-      <figure class="discovery-card">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/img/carabanchel.jpg" alt="Carabanchel">
-        <figcaption>Carabanchel</figcaption>
-      </figure>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="discovery col col--4-of-12">
-      <figure class="discovery-card">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/img/mostoles.jpg" alt="Móstoles">
-        <figcaption>Móstoles</figcaption>
-      </figure>
-    </div>
-
-    <div class="discovery col col--4-of-12">
-      <figure class="discovery-card">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/img/fuenlabrada.jpg" alt="Fuenlabrada">
-        <figcaption>Fuenlabrada</figcaption>
-      </figure>
-    </div>
-
-    <div class="discovery col col--4-of-12">
-        <div class="discover-dream">
-          <h2>Un sueño <span>hecho realidad</span></h2>
-          <p>Desde el principio hata el fin vamos a estar contigo. Desde el momento en el que estás buscando hasta que encuentres el hogar que siempre soñaste estaremos ahí para lo que necesites.</p>
-          <a href="#">Busca tu casa</a>
-        </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col col--4-of-12">
-      <div class="discover-us">
-        <h2>Conoce más <span>de nosotros</span></h2>
-        <p>Somos una inmobiliaria diferente. Ponemos nuestros principios y valores por delante, queremos ser transparentes en todo lo que hacemos.</p>
-        <a href="#">Pide una cita</a>
-      </div>
-    </div>
-
-    <div class="col col--8-of-12">
-      <figure class="discovery-card">
-        <img src="<?php bloginfo('template_directory'); ?>/assets/img/aravaca.jpg" alt="Aravaca">
-        <figcaption>Aravaca</figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
 <!-- FIN HERO -->
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
