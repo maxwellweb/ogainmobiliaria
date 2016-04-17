@@ -7,7 +7,7 @@
  * @package ogainmobiliaria
  */
 
-get_header(); ?>
+get_header('pagina'); ?>
 <section class="cats-top">
   <div class="wrapper">
     <div class="row">
