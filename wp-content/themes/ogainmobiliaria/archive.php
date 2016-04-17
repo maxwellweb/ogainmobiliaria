@@ -7,20 +7,28 @@
  * @package ogainmobiliaria
  */
 
-get_header(); ?>
-
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+get_header('pagina'); ?>
+<section class="cats-top">
+  <div class="wrapper">
+    <div class="row">
+      <div class="col col--9-of-12 col--centered">
+        <h2><span>[</span>Propiedades en venta<span>]</span></h2>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="row">
 
 		<?php
 		if ( have_posts() ) : ?>
 
-			<header class="page-header">
+			<!--<header class="page-header">
 				<?php
 					the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
-			</header><!-- .page-header -->
+			</header> .page-header -->
 
 			<?php
 			/* Start the Loop */
@@ -42,10 +50,8 @@ get_header(); ?>
 			get_template_part( 'template-parts/content', 'none' );
 
 		endif; ?>
-
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
+	</div>
+</section>
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();
