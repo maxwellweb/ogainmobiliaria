@@ -1,44 +1,45 @@
 *:last-child
   margin-bottom: 0 !important
 
-// article
-//   padding: 3rem 2rem 0
-//   background-color: lighten($calico, 15%)
-//   border: 0
-//   border-bottom-width: 1px
-//   border-image: linear-gradient(90deg, hsla(0, 0%, 90%, 0), hsla(0, 0%, 90%, 1) 50%, hsla(0, 0%, 90%, 0) 100%) 5%
-//
-//   &:nth-child(even)
-//     background-color: lighten($calico, 18%)
-//
-//   > .content
-//     font-size: 1.1rem
-//     line-height: 1.7
-//     color: $tuna
+.category-blog
+  article
+    padding: 3rem 2rem 0
+    background-color: lighten($calico, 15%)
+    border: 0
+    border-bottom-width: 1px
+    border-image: linear-gradient(90deg, hsla(0, 0%, 90%, 0), hsla(0, 0%, 90%, 1) 50%, hsla(0, 0%, 90%, 0) 100%) 5%
 
-.content
+    &:nth-child(even)
+      background-color: lighten($calico, 18%)
 
-  h2, h3
-    text-transform: capitalize
-    font-weight: 300
-    color: $tuna
+    > .content
+      font-size: 1.1rem
+      line-height: 1.7
+      color: $tuna
 
-  footer
-    margin-top: 2rem
-    padding-bottom: 2rem
-    font-size: .9rem
-    color: lighten($tuna,25%)
+  .content
 
-.pagination
-  padding:  0 2rem
+    h2, h2 a, h3
+      text-transform: capitalize
+      font-weight: 300
+      color: $tuna
 
-  a
-    display: inline-block
-    max-width: 50%
+    footer
+      margin-top: 2rem
+      padding-bottom: 2rem
+      font-size: .9rem
+      color: lighten($tuna,25%)
 
-  .prev
-    float: left
+  .pagination
+    padding:  0 2rem
 
-  .next
-    float: right
-    text-align: right
+    a
+      display: inline-block
+      max-width: 50%
+
+    .prev
+      float: left
+
+    .next
+      float: right
+      text-align: right

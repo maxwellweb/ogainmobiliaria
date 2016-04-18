@@ -11,7 +11,7 @@
 
 <article id="post-<?php the_ID(); ?>">
 	<div class="content col col--6-of-12 col--am col--centered">
-	
+
 			<?php
 				if ( is_single() ) {
 					the_title( '<h1>', '</h1>' );
@@ -20,12 +20,12 @@
 				}
 
 			if ( 'post' === get_post_type() ) : ?>
-			
-				
-			
+
+
+
 			<?php
 			endif; ?>
-			
+
 			<?php
 				the_content( sprintf(
 					/* translators: %s: Name of current post. */
@@ -40,7 +40,7 @@
 			?>
 
 			<footer>
-				<date><?php ogainmobiliaria_posted_on(); ?></date>
+				<date><?php the_date(); ?></date>
 			</footer>
 		<!-- <footer class="entry-footer">
 			<?php ogainmobiliaria_entry_footer(); ?>
